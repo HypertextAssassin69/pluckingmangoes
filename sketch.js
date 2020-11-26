@@ -34,7 +34,8 @@ function setup() {
 function draw() {
   background(255);
   Engine.update(engine);
-  tree1.display();
+  image(boyImage,200,350,300,300);
+	tree1.display();
   stone1.display();
   chain1.display();
   mango1.display();
@@ -55,7 +56,7 @@ function draw() {
   dectectcollision(stone1,mango4);
   dectectcollision(stone1,mango5);
   ground1.display();
-  image(boyImage,200,350,300,300);
+  
   drawSprites();
 }
 function mouseDragged(){
